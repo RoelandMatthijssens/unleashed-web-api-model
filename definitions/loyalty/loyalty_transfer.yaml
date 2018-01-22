@@ -1,0 +1,37 @@
+type: object
+title: LoyaltyTransfer
+required:
+  - from
+  - to
+  - amount
+  - state
+  - last_updated
+  - description
+properties:
+  id:
+    type: string
+    description: The ID of the transaction
+  from:
+      type: string
+      format: msisdn
+      description: The msisdn of the sender of the loyalty points
+  to:
+      type: string
+      format: msisdn
+      description: The msisdn of the receiver of the loyalty points
+  amount:
+      type: number
+      format: float
+      description: The amount of loyalty points transfered
+  state:
+      type: string
+      enum:
+          - completed
+          - reserved
+          - canceled
+  last_updated:
+      type: string
+      format: date
+  description:
+      type: string
+      description: The message of the transfer
