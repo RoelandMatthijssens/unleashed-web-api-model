@@ -31,6 +31,8 @@ tags:
     description: App
   - name: Point of sale
     description: Partners
+  - name: Loyalty
+    description: Loyalty
 schemes:
   - https
 paths:

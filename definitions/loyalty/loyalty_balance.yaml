@@ -1,0 +1,8 @@
+type: object
+title: LoyaltyBalance
+required:
+  - balance
+properties:
+  balance:
+    description: The total amount of loyalty points the customer has
+    type: number
